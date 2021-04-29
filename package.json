@@ -16,7 +16,7 @@
     "ci/cd",
     "workshop"
   ],
-  "author": "Ben Coe <bencoe@google.com>",
+  "author": "Google LLC",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/bcoe/ci-cd-workshop/issues"

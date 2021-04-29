@@ -1,11 +1,35 @@
-👋 Hello, I'm **Benjamin Coe**
+# Exploring CI/CD with a Profile README.md
 
-I'm a Developer Relations Engineer at Google, where I spend my time
-building automation 🤖 (_like [release-please](https://github.com/googleapis/release-please)_).
+[Profile READMEs](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme) are a fun easter egg on GitHub. If you create a
+repository on your personal account, with the same name as your username,
+the `README.md` in this repository will be displayed on your profile page.
 
-Outside of work, I'm a core contributor to [Node.js](https://github.com/nodejs/node), work on the code coverage tool [c8](https://github.com/bcoe/c8), and
-maintain the argument parser [yargs](https://github.com/yargs/yargs).
+Here's [an example](https://github.com/bcoe/bcoe).
 
-Here's how I spend my time on any given week,
+In this hands on lab, we explore the topic of CI/CD using
+[GitHub Actions](https://docs.github.com/en/actions) and your Profile README.md.
 
-![Ben's week](./interests.svg)
+## The Exercise
+
+### Prerequisites
+
+**Configure Node.js:**
+
+Install [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+(the Node Version Manager), and use this to configure the most recent release
+of Node 14 on your computer:
+
+```bash
+nvm install 14
+nvm use 14
+```
+
+### Use this repository as a template
+
+...
+
+## License
+
+Apache Version 2.0
+
+See [LICENSE](https://github.com/googleapis/nodejs-secret-manager/blob/master/LICENSE)
