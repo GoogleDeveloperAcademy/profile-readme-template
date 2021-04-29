@@ -13,6 +13,11 @@ In this hands on lab, we explore the topic of CI/CD using
 
 ### Prerequisites
 
+**Join the GoogleDeveloperAcademy Organization:**
+
+Instructions will be made available for doing so, reach out to an instructor
+if you bump into any issues.
+
 **Configure Node.js:**
 
 Install [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
@@ -26,7 +31,12 @@ nvm use 14
 
 ### Use this repository as a template
 
-...
+Using this repository as a template, create a new repository on your personal
+account with the same name as your username:
+
+ <img width="400" src="https://raw.githubusercontent.com/GoogleDeveloperAcademy/profile-readme-template/images/template.png">
+
+### Personalize your profile page
 
 ## License
 
