@@ -1,12 +1,12 @@
 # Exploring CI/CD with a Profile README.md
 
 [Profile READMEs](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme) are a fun easter egg on GitHub. If you create a
-repository on your personal account, with the same name as your username,
+repository on your personal account with the same name as your username,
 the `README.md` in this repository will be displayed on your profile page.
 
 Here's [an example](https://github.com/bcoe/bcoe).
 
-In this hands on lab, we explore the topic of CI/CD using
+In this hands on workshop, we explore the topic of CI/CD using
 [GitHub Actions](https://docs.github.com/en/actions) and your Profile README.md.
 
 ## The Workshop
@@ -38,10 +38,9 @@ account with the same name as your username:
 
 ### Personalize your profile page
 
-Let's personalize bio that you used as a template:
+Let's personalize your biography:
 
-1. Clone the repository you've just created (_I recommend using
-the [ssh](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) option, when cloning a repository_).
+1. Clone the repository you've just created (_I recommend using [ssh](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)_).
 2. Create a branch to commit your changes on,
   `cd [my-user-name]`, `git checkout -b personalize`.
 3. Replace the contents of `README.md` with the contents of `README.example.md`.
@@ -59,7 +58,7 @@ Having made your changes locally, push them to GitHub and open a pull request:
 
 1. `git commit -a -m 'docs: update bio to reflect myself'`.
 2. `git push origin personalize`.
-3. Visit GitHub and [create a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request), **Don't merge the pull request immediately**.
+3. Visit GitHub and [create a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request). **Don't merge the pull request immediately**.
 
 ### Look closely at your pull request
 
@@ -95,11 +94,11 @@ When you created your repository, it included the file `.github/workflows/ci.yam
         - run: npm test
   ```
 
-This file describes a GitHub Action workflow, which will run unit tests when
-a pull request is open.
-
-When you edited `interests.json`, you broke some of the unit tests described
+This file describes a GitHub Action workflow which will run unit tests when
+a pull request is open. When you edited `interests.json`, you broke some of the unit tests described
 in `test.js`.
+
+> Automated tests are an important part of Continuous Integration, because they ensure that the code that lands on the `main` branch is passing.
 
 ### Getting tests passing
 
@@ -127,24 +126,21 @@ GitHub (`github.com/[your-user-name]`).
 One shortcoming of our profile page generator is that we rely on someone
 running `npm run generate` locally to ensure that our pie chart is updated.
 
-Ben has updated their repository with a workflow called [`update-svg.yaml`](https://github.com/bcoe/bcoe/blob/main/.github/workflows/update-svg.yaml), which automatically pushes
+`bcoe` has updated their repository with a workflow called [`update-svg.yaml`](https://github.com/bcoe/bcoe/blob/main/.github/workflows/update-svg.yaml), which automatically pushes
 an updated version of `interests.svg`, when changes are landed to the `main`
 branch.
 
 Use this file as a starting point, and try adding similar functionality to
-your repository.
-
-If it's working, any updates to `interests.json` should be reflected in an
+your repository. Once configured, any updates to `interests.json` should be reflected in an
 automated pull request, [like this](https://github.com/bcoe/bcoe/pull/4).
+
+> Pushing code automatically to a branch like this is analogous to Continuous Deployment.
 
 ## You're done!
 
-That's the end of the workshop 🥳, to recap:
+That's the end of the workshop 🥳
 
-* `ci.yaml`: demonstrates the concept of continuous integration.
-* `update-svg.yaml`: demonstrates the concept of continuous deployment.
-
-I encourage you to continue personalizing your `README.md`, and to keep
+But, I encourage you to continue personalizing your `README.md`, and to keep
 experimenting with GitHub Actions.
 
 ## License
