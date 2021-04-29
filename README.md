@@ -34,7 +34,7 @@ nvm use 14
 Using this repository as a template, create a new repository on your personal
 account with the same name as your username:
 
- <img width="400" src="https://raw.githubusercontent.com/GoogleDeveloperAcademy/profile-readme-template/images/template.png">
+ <img width="400" src="https://raw.githubusercontent.com/GoogleDeveloperAcademy/profile-readme-template/main/images/template.png">
 
 ### Personalize your profile page
 
