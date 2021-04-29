@@ -38,6 +38,19 @@ account with the same name as your username:
 
 ### Personalize your profile page
 
+1. Clone the repository you've just created (_I recommend using
+the [ssh](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) option, when cloning a repository_).
+2. Create a branch to commit your changes on,
+  `cd [my-user-name]`, `git checkout -b personalize`.
+3. Replace the contents of `README.md` with the contents of `README.example.md`.
+  > `README.example.md` is meant as a starting point, customize this to match
+  > your bio. Make sure to leave a link to `./interests.svg` as this is used
+  > in the following steps in the exercise.
+4. Edit the contents of `interests.json` to match your interests (_this file is used to generate
+  the pie chart on your profile page_).
+5. Install the project's dependencies, `npm i`.
+6. Generate a new pie chart, `npm run generate`.
+
 ## License
 
 Apache Version 2.0
